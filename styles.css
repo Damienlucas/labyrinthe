@@ -1,0 +1,131 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-image: url(./images/people-3131802_640.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container{
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    /* position relative */
+}
+.img2{
+    /* position absolute */
+    width: 10vw;
+    height: 20vh;
+    margin-top: 60vh;
+    transform: translateX(180%);
+}
+.img2:hover{
+    animation: rotation 20s linear infinite;
+}
+@keyframes rotation {
+    0%{
+        opacity: 1;
+        transform: translateX(180%);
+    }   
+    3%{
+        transform: translate(242%, -8%);
+    } 
+    6%{
+        transform: translate(242%, 10%);
+    }
+    9%{
+        transform: translate(285%, 10%);
+    }
+    12%{
+        transform: translate(285%, 70%);
+    }
+    15%{
+        transform: translate(325%, 70%);
+    }
+    18%{
+        transform: translate(325%, -15%);
+    }
+    21%{
+        transform: translate(285%, -15%);
+    }
+    24%{
+        transform: translate(285%, -45%);
+    }
+    27%{
+        transform: translate(405%, -60%);
+    }
+    30%{
+        transform: translate(405%, -120%);
+    }
+    33%{
+        transform: translate(370%, -115%);
+    }
+    36%{
+        transform: translate(370%, -87%);
+    }
+    39%{
+        transform: translate(330%, -93%);
+    }
+    42%{
+        transform: translate(328%, -135%);
+    }
+    45%{
+        transform: translate(505%, -159%);
+    }
+    48%{
+        transform: translate(525%, -50%);
+    }
+    51%{
+        transform: translate(465%, -45%);
+    }
+    54%{
+        transform: translate(465%, -15%);
+    }
+    57%{
+        transform: translate(435%, -10%);
+    }
+    60%{
+        transform: translate(440%, 20%);
+    }
+    63%{
+        transform: translate(505%, 15%);
+    }
+    66%{
+        transform: translate(505%, 40%);
+    }
+    69%{
+        transform: translate(550%, 35%);
+    }
+    72%{
+        transform: translate(545%, -25%);
+    }
+    75%{
+        transform: translate(595%, -30%);
+    }
+    76%{
+        transform: translate(595%, -30%) rotate(0deg);
+        opacity: 1;
+    }
+    81%{
+        transform: translate(595%, -30%) rotate(360deg);
+        opacity: 0;
+    }
+    86%{
+        transform: translate(595%, -30%) rotate(0deg);
+        opacity: 1;
+    }
+    91%{
+        transform: translate(595%, -30%) rotate(360deg);
+        opacity: 0;
+    }
+    96%{
+        transform: translate(595%, -30%) rotate(360deg);
+        opacity: 1;
+    }
+}
